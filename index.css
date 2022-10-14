@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Raleway:wght@100;200;400;500&display=swap");
+:root {
+  --pri: rgb(244, 177, 52);
+  --dark: rgba(0, 0, 0, 0.896);
+  --light: white;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: var(--light);
+  font-family: "Raleway", sans-serif;
+}
+
+.header {
+  background-color: var(--dark);
+  height: 3.5rem;
+  width: 100%;
+  min-width: 400px;
+  display: flex;
+  border-bottom: 1px solid rgb(245, 176, 47);
+  text-align: center;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+}
+
+.logo {
+  margin-right: auto;
+
+  width: 40%;
+  font-size: 2rem;
+  font-family: "Comforter Brush", cursive;
+}
+.nav {
+  width: 60%;
+  display: flex;
+  margin-left: 40%;
+  justify-content: center;
+}
+.nav > ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  /* border: 1px solid rgb(251, 255, 0); */
+}
+
+li {
+  list-style: none;
+  width: 50%;
+  margin-left: auto;
+  /* border:1px solid red; */
+  margin-right: 15%;
+  font-size: 1rem;
+}
+li > a {
+  color: var(--pri);
+  text-decoration: none;
+}
+li > a:hover {
+  color: var(--light);
+  text-decoration: none;
+}
+.slider {
+  height: 500px;
+  width: 100%;
+  animation: slider 15s 1s infinite running;
+
+  background-color: rgba(255, 255, 255, 0.53);
+}
+.slides {
+  height: 500px;
+  width: 300%;
+  background-color: rgba(255, 255, 255, 0.53);
+  display: flex;
+  overflow: hidden;
+}
+.slider:hover {
+  animation-play-state: paused;
+}
+
+.ele {
+  width: 40%;
+}
+.ele:hover {
+  animation-play-state: paused;
+}
+.me {
+  display: flex;
+  text-align: center;
+}
+.me > h1,
+.me > p {
+  box-shadow: 5px 10px rgb(47, 45, 41);
+  font-family: "Comforter Brush", cursive;
+  justify-content: center;
+  height: 200px;
+  width: 40%;
+  margin-top: 50px;
+  margin-left: 30%;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.466);
+  color: #000;
+  font-size: 4rem;
+  line-height: 200px;
+}
+
+.ele:nth-child(1) {
+  background-image: url("images/gokarna2.jfif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ele:nth-child(2) {
+  background-color: rgba(0, 255, 255, 0.171);
+  background-image: url("images/gokarna.jfif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ele:nth-child(3) {
+  background-color: rgba(137, 43, 226, 0.538);
+  background-image: url("images/gokarna2.jfif");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@keyframes slider {
+  25% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -100%;
+  }
+  75% {
+    margin-left: -200%;
+  }
+  100% {
+    margin-left: -200%;
+  }
+}
+
+/* products */
+.places {
+  /* height: 70vh; */
+  background-color: rgba(207, 196, 188, 0.945);
+  padding: 50px 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.places_parent {
+  width: 80%;
+  justify-content: space-evenly;
+  padding: 15px 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.place {
+  height: 400px;
+  width: 30%;
+  background-color: rgb(28, 112, 56);
+  margin-left: 25px;
+  margin: 10px 0px;
+  box-shadow: 0px 5px 20px grey;
+}
+.place:hover > .place_details {
+  margin-top: 270px;
+  transform: scale(1.1);
+  overflow: hidden;
+}
+.place:nth-child(1) {
+  background-image: url("images/Agumbe\,\ Karnataka\,\ India.jfif");
+  background-size: cover;
+  overflow: hidden;
+}
+.place:nth-child(2) {
+  background-image: url("images/Attur\ Church\ Road\,\ Karnataka\,\ India.jfif");
+  background-size: cover;
+  overflow: hidden;
+}
+.place:nth-child(3) {
+  background-image: url("images/Mullayanagiri_Chikkamagalur.jfif");
+  background-size: cover;
+  overflow: hidden;
+}
+.place:nth-child(4) {
+  background-image: url("images/Chunchi\ Falls\,\ Karnataka\,\ India.jfif");
+  background-size: cover;
+  overflow: hidden;
+}
+.place:nth-child(5) {
+  background-image: url("images/gokarna.jfif");
+  background-size: cover;
+  overflow: hidden;
+}
+.place:nth-child(6) {
+  background-image: url("images/murudeshwar.jfif");
+  background-size: cover;
+  overflow: hidden;
+}
+.place:nth-child(7) {
+  background-image: url("images/Hampi\,\ Karnataka\,\ India.jfif");
+  background-size: cover;
+  overflow: hidden;
+}
+.place:nth-child(8) {
+  background-image: url("images/Tungabhadra\ Dam\,\ Hosapete\,\ Karnataka.jfif");
+  background-size: cover;
+  overflow: hidden;
+}
+.place:nth-child(9) {
+  background-image: url("images/Namdroling\ Monastery\ Golden\ Temple\,\ Bylakuppe\,\ Karnataka\,\ Indi.jfif");
+  background-size: cover;
+  overflow: hidden;
+}
+.place_details {
+  height: 200px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  margin-top: 340px;
+  padding: 10px 10px;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+h2 {
+  color: black;
+}
+
+.place_details > button {
+  margin-left: 35%;
+  border: #3f6e18 solid 1px;
+  border-radius: 2vh;
+  background-color: rgb(170, 73, 9);
+
+  width: auto;
+  color: rgb(252, 252, 252);
+  display: flex;
+  padding: 1vh 1vh;
+
+  font-size: 2.2vh;
+
+  text-align: center;
+  margin-top: -4vh;
+}
+
+.place_details > button:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(21, 90, 30);
+}
+.para {
+  padding-bottom: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.title {
+  font-size: 2rem;
+  text-align: center;
+  color: #000000;
+}
+
+/* footer */
+footer {
+  border-top: orange 1px solid;
+  width: 100%;
+  padding: 50px 0px;
+  background-color: rgba(0, 0, 0, 0.897);
+  display: flex;
+
+  justify-content: space-evenly;
+}
+.footerchild {
+  height: 150px;
+  width: 40%;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.icons > a {
+  color: white;
+}
+
+.footerchild > ul > li {
+  font-size: 1rem;
+  padding: 5px 0px;
+  list-style-type: none;
+  margin: 0px 10px;
+}
+.footerchild > ul > li:first-child {
+  color: orange;
+  font-weight: bold;
+}
+.footerchild > ul > li:not(:nth-child(1)):hover {
+  color: rgb(226, 156, 25);
+}
+.footerchild > ul > li:not(:nth-child(1)) {
+  text-decoration: underline;
+}
+.connect {
+  background-color: rgba(0, 0, 0, 0.897);
+}
+.footerimg {
+  padding: 20px 0px;
+}
+
+.footerimg:last-child {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footerimg > .icons > a > img {
+  height: 60px;
+  width: 60px;
+}
+.icons {
+  height: 63px;
+  width: 70px;
+  overflow: hidden;
+}
+.icons:last-child {
+  border: 2px solid rgba(255, 255, 255, 0.715);
+  border-radius: 100px;
+}
+.footerimg > .icons > a > img:hover {
+  margin-left: -64.5px;
+  margin-top: -63px;
+}
+
+.copy {
+  font-size: 1.4rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 20%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.953);
+  color: rgb(255, 255, 255);
+}
+
+.slider {
+  height: 300px;
+  width: 100%;
+}
+.slides {
+  height: 300px;
+  width: 300%;
+}
+
+@media screen and (max-width: 400px) {
+  .logo {
+    font-size: 0.9rem;
+    width: 10%;
+  }
+  .me > p,
+  .me > h1 {
+    height: 150px;
+    width: 100%;
+    margin-top: 65px;
+    margin-left: 0px;
+    box-shadow: none;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.466);
+    color: #000;
+    line-height: 200px;
+
+    font-size: 0.5rem;
+  }
+  .footerchild > ul > li {
+    font-size: 0.9rem;
+  }
+  .place {
+    height: 380px;
+    width: 100%;
+  }
+
+  .slider {
+    height: 300px;
+    width: 100%;
+  }
+  .slides {
+    height: 300px;
+    width: 300%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .footerchild > ul > li {
+    font-size: 0.9rem;
+  }
+  .place {
+    height: 380px;
+    width: 100%;
+  }
+  .me > p,
+  .me > h1 {
+    font-size: 3rem;
+  }
+}
